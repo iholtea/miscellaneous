@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<job id="helloBatchletJob" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+
+	<step id="step1">
+		<properties>
+            <property name="inputFile" value="data.csv" />
+            <property name="retryLimit" value="5" />
+        </properties>
+		<batchlet ref="io.ionuth.batch.hello.HelloBatchlet"></batchlet>
+	</step>
+	
+</job>
